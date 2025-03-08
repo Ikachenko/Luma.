@@ -1,0 +1,13 @@
+{
+    "name": "test",
+    "description": "test",
+    "version": "1.0",
+    "manifest_version": 3,
+    "action": {
+        "default_popup": "popup/popup.html",
+        "default_icon": "icon.png"
+    },
+    "chrome_url_overrides": {
+        "newtab": "homepage/home.html"
+    }
+}

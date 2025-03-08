@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Tab</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <!-- Top bar -->
+    <div class="top-bar">
+        <div class="button-container">
+            <div class="dropdownContainer">
+                <button>
+                    <i class="bi bi-grid-3x3-gap-fill" id="dropdownButton"></i>
+                </button>
+                <div class="dropdownContent">
+                    <a href="https://www.google.com">Google</a>
+                    <a href="https://www.youtube.com">YouTube</a>
+                    <a href="https://www.netflix.com">Netflix</a>
+                    <a href="https://www.amazon.com">Amazon</a>
+                    <a href="https://www.reddit.com">Reddit</a>
+                    <a href="https://www.twitter.com">Twitter</a>
+                    <a href="https://www.facebook.com">Facebook</a>
+                    <a href="https://www.instagram.com">Instagram</a>
+                    <a href="https://www.tiktok.com">TikTok</a>
+                    <a href="https://www.linkedin.com">LinkedIn</a>
+                    <a href="https://www.pinterest.com">Pinterest</a>
+                </div>
+            </div>
+            <button>
+                <i class="bi bi-gear"></i>
+            </button>
+            <button>
+                <i class="bi bi-chat-heart"></i>
+            </button>
+            <button>
+                <i class="bi bi-github"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Main content -->
+    <div class="main-content">
+        <div class="clock">
+            <span id="time">12:00:00</span>
+        </div>
+        <script src="clock.js"></script>
+
+        <div class="searchbar-container">
+            <form class="searchbar" action="https://www.google.com/search" method="GET">
+                <input type="text" name="q" id="search" placeholder="Search Google..." autocomplete="off">               
+                <button id="clearSearch" type="button">
+                    <i class="bi bi-x" style="font-size: 30px;"></i>
+                </button>
+                <button class="submit" type="submit">
+                    <i class="bi bi-search"></i>
+                </button>
+            </form>
+        </div>
+    </div>
+    <script src="Input-clear.js"></script>
+    <script src="DropdownClick.js"></script>
+</body>
