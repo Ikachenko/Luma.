@@ -1,1 +1,1 @@
-console.log("popup loaded successfully, hi user!")
+console.log("homepage loaded successfully, hi user!")

@@ -120,4 +120,9 @@ body{
     text-decoration: none;
     display: block;
     border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+}
+.dropdownContentContainer i{
+    font-size: 50px;
 }
