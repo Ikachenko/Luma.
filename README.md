@@ -13,4 +13,5 @@ Upcoming features :
 
 ## How it works
 
-- Manifes
+- Manifest.json
+Chrome extension permissions
