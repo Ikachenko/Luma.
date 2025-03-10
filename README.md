@@ -1,5 +1,6 @@
 ## Overview
 Simple, clean, and functional chrome homepage extension.
+Current version 1.0 
 
 features :
 - Clock
@@ -19,3 +20,11 @@ Upcoming features :
 - homepage/clock.js : fetches the date and time and modifies the span element to display time
 - input-clear.js : adds the x button when theres is input in searchbar and erases input when clicked and when page loads
 - dropdown-click.js : opens pinned apps dropdown
+
+## Credits and license
+
+© 2025 Ikachenko, This software is distributed under the GPL-3.0 License.
+
+Credits :
+- Icons from Bootstrap
+- Some UI elements from UIverse
