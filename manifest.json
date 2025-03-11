@@ -1,6 +1,6 @@
 {
-    "name": "test",
-    "description": "test",
+    "name": "Luma.",
+    "description": "Simple, clean, and functional chrome homepage extension.",
     "version": "1.0",
     "manifest_version": 3,
     "action": {
