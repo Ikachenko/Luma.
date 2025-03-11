@@ -22,6 +22,12 @@ Upcoming features :
 - input-clear.js : adds the x button when theres is input in searchbar and erases input when clicked and when page loads
 - dropdown-click.js : opens pinned apps dropdown
 
+## Installing locally
+
+1. Go to chrome://extensions
+2. Click on load unpacked
+3. Select extracted folder of this project
+
 ## Credits and license
 
 © 2025 Ikachenko, This software is distributed under the GPL-3.0 License.
