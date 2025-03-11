@@ -25,8 +25,9 @@ Upcoming features :
 ## Installing locally
 
 1. Go to chrome://extensions
-2. Click on load unpacked
-3. Select extracted folder of this project
+2. Turn on developer mode
+3. Click on load unpacked
+4. Select extracted folder of this project
 
 ## Credits and license
 
