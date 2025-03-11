@@ -1,5 +1,6 @@
 ## Overview
 Simple, clean, and functional chrome homepage extension.
+**Coming soon to the webstore**
 Current version 1.0 
 
 features :
