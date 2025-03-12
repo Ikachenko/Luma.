@@ -6,8 +6,9 @@
     <title>New Tab</title>
     <link rel="stylesheet" href="home.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"> 
 </head>
-<body>
+<body id="body">
     <!-- Top bar -->
     <div class="top-bar">
         <div class="button-container">
@@ -66,17 +67,20 @@
                 </div>
             </div>
             <button>
-                <i class="bi bi-gear"></i>
+                <i class="bi bi-gear" id="settingsButton"></i>
             </button>
             <button>
                 <i class="bi bi-chat-heart"></i>
             </button>
-            <a href="https://github.com/Ikachenko/Luma.">
+            <a href="https://github.com/Ikachenko/Luma." target="_blank">
                 <button>
-                    <i class="bi bi-github"></i>
+                    <i class="bi bi-github"></i>    
                 </button>
             </a>    
         </div>
+    </div>
+
+    <div class="settings" id="settings">
     </div>
 
     <!-- Main content -->
@@ -100,4 +104,5 @@
     </div>
     <script src="input-clear.js"></script>
     <script src="dropdown-click.js"></script>
+    <script src="settings-window.js"></script>
 </body>

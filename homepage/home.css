@@ -6,6 +6,7 @@ body{
     height: 100vh;
     width: 100vw;
     align-items: center;
+    overflow: hidden;
 }
 .clock{
     text-align: center;
@@ -19,6 +20,7 @@ body{
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     font-style: bold;
+    animation: fadeIn 1s ease-in-out;
 }
 .main-content{
     margin: 0;
@@ -38,6 +40,7 @@ body{
     border-radius: 25px;
     display: flex;
     justify-content: left;
+    animation: fadeIn 1s ease-in-out;
 }
 .searchbar input[type="text"]{
     height: 50px;
@@ -85,6 +88,9 @@ body{
     margin-right: 20px;
     display: flex;
     margin-left: auto;
+    animation: bounceInRight;
+    animation-duration: 3s;
+    overflow: hidden;
 }
 #clearSearch{
     opacity: 0;
@@ -112,25 +118,62 @@ body{
 .dropdownContentContainer{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 15px
 }
 .dropdownContentContainer a{
     color: white;
     text-align: center;
-    padding: 14px 16px;
     text-decoration: none;
-    display: block;
     border-radius: 25px;
     display: flex;
+    justify-content: center;
     flex-direction: column;
+    background-color: transparent;
+    width: 100px;
+    height: 100px;
+    padding: 5px;
 }
 .dropdownContentContainer i{
-    font-size: 50px;
+    font-size: 2rem;
+    text-align: center;
 }
 .dropdownContentContainer span {
     display: block;
     width: 100%;
-    text-align: left;
-    padding: 10px;
-    grid-column: 3;
-    align-content: start;   ;
+    text-align: center;
+    grid-column: span 3;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+.dropdownContentContainer a:hover{
+    background-color: #3e3e43;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.settings {
+    position: absolute;
+    z-index: 2; 
+    background-color: #1b1b1d;
+    border-radius: 25px;
+    width: 800px;
+    height: 900px;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: auto;
+    visibility: hidden;
+    filter: none !important;
+}
+.showSettings {
+    visibility: visible;
+    animation: zoomIn;
+    animation-duration: 0.5s;
 }
