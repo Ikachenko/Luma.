@@ -80,7 +80,89 @@
         </div>
     </div>
 
+    <!--Settings popup-->
     <div class="settings" id="settings">
+        <div class="settingsContainer">
+            <div class="settingsSidePanel">
+                <div class="settingsLogoContainer">
+                    <p><i class="bi bi-gear"></i> Settings</p>
+                </div>
+                <div class="settingsItemsContainer">
+                    <div>
+                        <button class="settingsTabButton" id="settings1">Customization</button>
+                        <button class="settingsTabButton" id="settings2">Pinned Sites</button>
+                        <button class="settingsTabButton" id="settings3">User Data</button>
+                        <button class="settingsTabButton" id="settings4">Information</button>
+                    </div>
+                    <p class="versionNumber">Version Alpha 1.0</p>
+
+                </div>
+            </div>
+            <div class="settingsContentContainer">
+                <div class="settingsContent" id="settings1Content">
+                    <h1>Customization</h1>
+                </div>
+                <div class="settingsContent" id="settings2Content">
+                    <h1>Pinned Sites</h1>
+                </div>
+                <div class="settingsContent" id="settings3Content">
+                    <h1>User Data</h1>
+                    <p>We use the chrome.storage API to store user preferences. We do not collect private information nor do we share data with other 3rd party entities beyond Ikachenko (as an author) and Google</p>
+                    <div class="informationContainer">
+                        <h2>Types of Information stored:</h2> 
+                        <ul>
+                            <li>Install date</li>
+                            <li>Pinned applications</li>
+                            <li>Settings</li>
+                        </ul>
+                    </div>
+                        <h2>Data removal:</h2> 
+                        <p>If you wish to remove your data, you can do so by clicking the button below or by uninstalling the extension. This action will erase all current data and preferences. Changes cannot be reverted</p>
+                </div>
+                <div class="settingsContent" id="settings4Content">
+                    <h1>Version Alpha 1.0</h1>
+                    <p>Early testing phase, in progress of adding every main feature</p>
+                    <div class="informationContainer">
+                        <h2>Version details:</h2> 
+                        <ul class="noDottedList">
+                            <li>Luma. Version Alpha 1.0</li>
+                            <li>Created by Ikachenko</li>
+                            <li>Manifest Version: 3</li>
+                            <li>License: GNU General Public License GPL 3.0</li>
+                            <li>Last updated 0/00/00</li>
+                        </ul>
+                    </div>
+                    <div class="informationContainer">
+                        <h2>Features:</h2> 
+                        <ul>
+                            <li>Settings window</li>
+                            <li>Pinned sites menu</li>
+                            <li>Clock</li>
+                            <li>Searchbar</li>
+                        </ul>
+                    </div>
+                    <h1>Github</h1>
+                    <p>This project is free and open-source, feel free to use, modify, and re-distribute the code below as long as you place credits and links to the original github page and adhere to the GPL-3.0 License</p>
+                    <a href="https://github.com/Ikachenko/Luma." target="_blank">
+                        <button class="settingsGithubButton">
+                            Visit Github
+                        </button>
+                    </a>
+                    <h1>Credits</h1>
+                    <p>Multiple open-source assets (icons, animations, elements) were used in this project. Here is the complete credit to the rightful owners of these assets:</p>
+                    <div class="informationContainer">
+                        <ul>
+                            <li>Icons from Bootstrap, licensed under the MIT license</li>
+                            <li>Animations from Animate.css, licensed under the Hippocratic-2.1 license</li>
+                            <li>Elements from UIverse, licensed under the MIT license</li>
+                        </ul>
+                    </div>
+                    <h1>License</h1>
+                    <p>© 2025 Ikachenko, This software is distributed under the GPL-3.0 License.</p>
+                    <div class="endBreak"></div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- Main content -->
@@ -102,7 +184,10 @@
             </form>
         </div>
     </div>
+
+    <!--Scripts-->
     <script src="input-clear.js"></script>
     <script src="dropdown-click.js"></script>
     <script src="settings-window.js"></script>
+    <script src="settings-tab.js"></script>
 </body>
