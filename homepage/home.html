@@ -1,3 +1,21 @@
+<!-- 
+    Luma. - A Simple, clean and functional chrome homepage extension
+    Copyright (C) 2025 Ikachenko
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <https://www.gnu.org/licenses/>.
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -118,6 +136,9 @@
                     </div>
                         <h2>Data removal:</h2> 
                         <p>If you wish to remove your data, you can do so by clicking the button below or by uninstalling the extension. This action will erase all current data and preferences. Changes cannot be reverted</p>
+                        <button class="settingsCommandButton deleteDataButton">
+                            Delete data
+                        </button>
                 </div>
                 <div class="settingsContent" id="settings4Content">
                     <h1>Version Alpha 1.0</h1>
@@ -144,12 +165,12 @@
                     <h1>Github</h1>
                     <p>This project is free and open-source, feel free to use, modify, and re-distribute the code below as long as you place credits and links to the original github page and adhere to the GPL-3.0 License</p>
                     <a href="https://github.com/Ikachenko/Luma." target="_blank">
-                        <button class="settingsGithubButton">
+                        <button class="settingsCommandButton">
                             Visit Github
                         </button>
                     </a>
                     <h1>Credits</h1>
-                    <p>Multiple open-source assets (icons, animations, elements) were used in this project. Here is the complete credit to the rightful owners of these assets:</p>
+                    <p>Multiple open-source assets and libraries (icons, animations, elements) were used in this project. Here is the complete credit to the rightful owners of these assets:</p>
                     <div class="informationContainer">
                         <ul>
                             <li>Icons from Bootstrap, licensed under the MIT license</li>
@@ -158,7 +179,21 @@
                         </ul>
                     </div>
                     <h1>License</h1>
-                    <p>© 2025 Ikachenko, This software is distributed under the GPL-3.0 License.</p>
+                    <div class="informationContainer">
+                        <ul class="noDottedList">    
+                            <li>Luma – A Simple, Clean, and Functional Chrome Homepage Extension</li>
+                            <p></p>
+                            <li>Copyright (C) 2025 Ikachenko</li>
+                            <p></p>
+                            <li>This software is licensed under the GNU General Public License v3.0.</li>
+                            <li>You are free to use, modify, and distribute it under the same terms.</li>
+                            <p></p>
+                            <li>This program is provided WITHOUT ANY WARRANTY.</li>
+                            <li>See the full license at: https://www.gnu.org/licenses/gpl-3.0.html.</li>
+                            <p></p>
+                             <li>GitHub: https://github.com/Ikachenko</li>
+                        </ul>
+                    </div>
                     <div class="endBreak"></div>
                 </div>
             </div>
