@@ -82,6 +82,14 @@
                             Pinterest
                         </a>
                     </div>
+                    <div class="pinnedSiteDivider"></div>
+                    <div class="dropdownContentContainer">
+                        <span>Pinned sites</span>
+                        <button id="add-site-button">
+                            <i class="bi bi-plus-circle"></i>
+                            Add site
+                        </button>
+                    </div>
                 </div>
             </div>
             <button>
@@ -135,7 +143,7 @@
                         </ul>
                     </div>
                         <h2>Data removal:</h2> 
-                        <p>If you wish to remove your data, you can do so by clicking the button below or by uninstalling the extension. This action will erase all current data and preferences. Changes cannot be reverted</p>
+                        <p>If you wish to remove your data, you can do so by clicking the button below or by uninstalling the extension. This action will erase all current data and preferences. Changes cannot be reverted.</p>
                         <button class="settingsCommandButton deleteDataButton">
                             Delete data
                         </button>
@@ -189,9 +197,9 @@
                             <li>You are free to use, modify, and distribute it under the same terms.</li>
                             <p></p>
                             <li>This program is provided WITHOUT ANY WARRANTY.</li>
-                            <li>See the full license at: https://www.gnu.org/licenses/gpl-3.0.html.</li>
+                            <li>See the full license at: <a href="https://www.gnu.org/licenses/gpl-3.0.html." target="_blank">https://www.gnu.org/licenses/gpl-3.0.html.</a></li>
                             <p></p>
-                             <li>GitHub: https://github.com/Ikachenko</li>
+                             <li>GitHub: <a href="https://github.com/Ikachenko" target="_blank">https://github.com/Ikachenko</a></li>
                         </ul>
                     </div>
                     <div class="endBreak"></div>
@@ -209,7 +217,7 @@
 
         <div class="searchbar-container">
             <form class="searchbar" action="https://www.google.com/search" method="GET">
-                <input type="text" name="q" id="search" placeholder="Search Google..." autocomplete="off">               
+                <input type="text" name="q" id="search" placeholder="Search Google..." autocomplete="off" autofocus>               
                 <button id="clearSearch" type="button">
                     <i class="bi bi-x" style="font-size: 30px;"></i>
                 </button>
@@ -220,9 +228,20 @@
         </div>
     </div>
 
+    <!--Pin site dialog-->
+    <dialog class="pin-site-dialog" id="pin-site-dialog">
+        <form id="pin-site-dialog-container">
+            <label> Enter site URL</label>
+            <input type="text" placeholder="https://example.com" class="pin-site-input">
+            <label> Enter site display name</label>
+            <input type="text" placeholder="Example" class="pin-site-input">
+        </form>
+    </dialog>
+
     <!--Scripts-->
     <script src="input-clear.js"></script>
     <script src="dropdown-click.js"></script>
     <script src="settings-window.js"></script>
     <script src="settings-tab.js"></script>
+    <script src="pin-site.js"></script>
 </body>
