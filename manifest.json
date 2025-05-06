@@ -9,5 +9,9 @@
     },
     "chrome_url_overrides": {
         "newtab": "homepage/home.html"
-    }
+    },
+    "permissions": [
+        "storage",
+        "notifications",
+    ],
 }

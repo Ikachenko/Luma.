@@ -1,7 +1,20 @@
+chrome.runtime.onInstalled.addEventListener(() => {
+    const pinnedSites = [];
+    chrome.storage.sync.set({ pinnedSites }, () => {
+        console.log("Pinned sites array initialized in storage.");    
+    });
+});
+
 addEventListener("DOMContentLoaded", function () {
+    chrome.storage.sync.get(["pinnedSites"], (result) => {
+        const pinnedSites = result.pinnedSites || [];
+        console.log("Pinned sites array retrieved from chrome storage API to local array")
+    });
+
     const pinSiteButton = document.getElementById("add-site-button");
     const pinSiteDialog = document.getElementById("pin-site-dialog");
     const pinSiteDialogContainer = document.getElementById("pin-site-dialog-container");
+    const pinSiteDialogForm = this.document.getElementById("pin-site-dialog-container")
     var dialogIsActive = 0;
 
     pinSiteButton.addEventListener("click", function () {
@@ -27,3 +40,5 @@ addEventListener("DOMContentLoaded", function () {
     });
 
 });
+
+
