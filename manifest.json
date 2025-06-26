@@ -12,6 +12,10 @@
     },
     "permissions": [
         "storage",
-        "notifications",
+        "notifications"
     ],
+   "background": {
+      "service_worker": "service-worker.js",
+      "type": "module"
+    }
 }

@@ -34,7 +34,11 @@
                 <button>
                     <i class="bi bi-grid-3x3-gap-fill" id="dropdownButton"></i>
                 </button>
+
+                <!--pinned content-->
                 <div class="dropdownContent">
+
+                    <!--Content set 1-->
                     <div class="dropdownContentContainer">    
                         <span>Google</span>
                         <a href="https://www.google.com" target="_blank">
@@ -82,16 +86,20 @@
                             Pinterest
                         </a>
                     </div>
+
                     <div class="pinnedSiteDivider"></div>
-                    <div class="dropdownContentContainer">
-                        <span>Pinned sites</span>
-                        <button id="add-site-button">
-                            <i class="bi bi-plus-circle"></i>
+
+                    <!--Content set 2 (user made)-->
+                    <div class="dropdownContentContainer" id="user-pinned-sites-container">
+                        <span class="notUserGen">Pinned sites</span>
+                        <button class="notUserGen" id="add-site-button">
+                            <i class="bi bi-plus-circle notUserGen"></i>
                             Add site
                         </button>
                     </div>
                 </div>
             </div>
+
             <button>
                 <i class="bi bi-gear" id="settingsButton"></i>
             </button>
@@ -113,6 +121,8 @@
                 <div class="settingsLogoContainer">
                     <p><i class="bi bi-gear"></i> Settings</p>
                 </div>
+
+                <!--Tabs-->
                 <div class="settingsItemsContainer">
                     <div>
                         <button class="settingsTabButton" id="settings1">Customization</button>
@@ -124,13 +134,23 @@
 
                 </div>
             </div>
+
             <div class="settingsContentContainer">
+
+                <!--Customization-->
                 <div class="settingsContent" id="settings1Content">
                     <h1>Customization</h1>
                 </div>
+
+                <!--Pinned sites-->
                 <div class="settingsContent" id="settings2Content">
                     <h1>Pinned Sites</h1>
+                    <div class="pinned-site-list" id="pinnedSiteListContainer">
+                        
+                    </div>
                 </div>
+
+                <!--User data-->
                 <div class="settingsContent" id="settings3Content">
                     <h1>User Data</h1>
                     <p>We use the chrome.storage API to store user preferences. We do not collect private information nor do we share data with other 3rd party entities beyond Ikachenko (as an author) and Google</p>
@@ -144,10 +164,12 @@
                     </div>
                         <h2>Data removal:</h2> 
                         <p>If you wish to remove your data, you can do so by clicking the button below or by uninstalling the extension. This action will erase all current data and preferences. Changes cannot be reverted.</p>
-                        <button class="settingsCommandButton deleteDataButton">
+                        <button class="settingsCommandButton deleteDataButton" id="deleteDataButton">
                             Delete data
                         </button>
                 </div>
+
+                <!--Information-->
                 <div class="settingsContent" id="settings4Content">
                     <h1>Version Alpha 1.0</h1>
                     <p>Early testing phase, in progress of adding every main feature</p>
@@ -232,9 +254,10 @@
     <dialog class="pin-site-dialog" id="pin-site-dialog">
         <form id="pin-site-dialog-container">
             <label> Enter site URL</label>
-            <input type="text" placeholder="https://example.com" class="pin-site-input">
+            <input id="site-url" type="text" placeholder="https://example.com" class="pin-site-input">
             <label> Enter site display name</label>
-            <input type="text" placeholder="Example" class="pin-site-input">
+            <input id="site-name" type="text" placeholder="Example" class="pin-site-input">
+            <button type="submit" class="submit-pin-site" >Confirm</button>  
         </form>
     </dialog>
 
@@ -244,4 +267,6 @@
     <script src="settings-window.js"></script>
     <script src="settings-tab.js"></script>
     <script src="pin-site.js"></script>
+    <script src="delete-data.js"></script>
+    <script src="pinned-site-list.js"></script>
 </body>

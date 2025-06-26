@@ -182,6 +182,12 @@ body{
     font-size: 2rem;
     margin-bottom: 15px;
 }
+.favicon-settings {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    align-self: center;
+}
 .dropdownContentContainer a:hover{
     background-color: #3e3e43;
 }
@@ -196,6 +202,8 @@ body{
         opacity: 1;
     }
 }
+
+/* Settings */
 .settings {
     position: absolute;
     z-index: 2; 
@@ -337,6 +345,20 @@ body{
     border: none;
     margin-bottom: 10px;
 }
+.deleteDataButton {
+    background-color: red !important;
+    color: white !important;
+}
+.pinned-site-list {
+    width: 100%;
+    background-color: #0b0b0b;
+    height: 70vh;
+    border-radius: 25px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+/*scrollbar settings*/
 ::-webkit-scrollbar {
     background: transparent !important;
 }
@@ -353,10 +375,8 @@ body{
     width: 100%;
     background-color: #1b1b1d;
 }
-.deleteDataButton {
-    background-color: red !important;
-    color: white !important;
-}
+
+/* Pinned Sites*/
 .pinnedSiteDivider {
     width: 90%;
     height: 10px;
@@ -403,4 +423,38 @@ dialog::backdrop {
     border-radius: 25px;
     outline: none;
     padding-left: 20px;
+}
+.submit-pin-site {
+    background-color: #444141;
+    width: 120px;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border: none;
+    margin-bottom: 10px;
+    text-align: center;
+    padding: 10px 20px;
+}   
+.pinned-site-list-item {
+    width: 100%;
+    min-height: 100px;
+    height: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: grid;
+    grid-template-columns: 10% 30% 30% 30%;
+    align-items: center;
+    color: white;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: #3e3e43;
+}
+.pinned-site-list-item-content {
+    color: white;
+    justify-content: center;
+    align-self: center;
+    word-break: break-all !important;
 }
