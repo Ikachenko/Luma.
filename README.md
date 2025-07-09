@@ -6,9 +6,9 @@ Current version 1.0
 features :
 - Clock
 - Searchbar
+- Pinned sites
 
 Upcoming features :
-- Pinned sites
 - Customization settings
 
 ![image](https://github.com/user-attachments/assets/86006aee-801c-4f89-bb44-3c3df9af4252)
