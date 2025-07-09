@@ -18,6 +18,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 document.addEventListener('DOMContentLoaded', function() {
     const settingsButton = document.getElementById('settingsButton');
+    const secondLevelDialog = document.getElementsByClassName('secondLevelDialog');                                                                                                                                                                                                                                                                                                                                                       
     var settingsWindow = document.getElementById('settings');
     var body = document.getElementById('body');
     var windowIsActive = 0;
@@ -27,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
             settingsWindow.style.display = 'block';
             settingsWindow.classList.remove('closeSettings')   
             settingsWindow.classList.add('showSettings');
-            document.querySelectorAll('body > *:not(#settings)').forEach(function(element) {
+            document.querySelectorAll('body > *:not(#settings):not(.secondLevelDialog)').forEach(function(element) {
                 element.style.filter = 'blur(10px)';
             });
             setTimeout(function() {

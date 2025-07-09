@@ -145,6 +145,13 @@
                 <!--Pinned sites-->
                 <div class="settingsContent" id="settings2Content">
                     <h1>Pinned Sites</h1>
+                    <div class="optionContainer">
+                        <p>Ask before delete</p>
+                        <label class="switch">
+                            <input type="checkbox" id="askBeforeDeleteSwitch">
+                            <span class="slider"></span>
+                        </label>
+                    </div>
                     <div class="pinned-site-list" id="pinnedSiteListContainer">
                         
                     </div>
@@ -153,7 +160,8 @@
                 <!--User data-->
                 <div class="settingsContent" id="settings3Content">
                     <h1>User Data</h1>
-                    <p>We use the chrome.storage API to store user preferences. We do not collect private information nor do we share data with other 3rd party entities beyond Ikachenko (as an author) and Google</p>
+                    <p>We use the chrome.storage API to store user preferences. We do not collect private information nor do we share data with other 3rd party entities beyond Ikachenko (as an author) and Google. 
+                    </p>
                     <div class="informationContainer">
                         <h2>Types of Information stored:</h2> 
                         <ul>
@@ -260,6 +268,13 @@
             <button type="submit" class="submit-pin-site" >Confirm</button>  
         </form>
     </dialog>
+
+    <!--Delete pinned site dialog-->
+    <dialog class="delete-site-dialog secondLevelDialog" id="delete-site-dialog">
+        <form id="delete-site-dialog-container">
+            <p id="delete-site-dialog-text-content"></p>
+            <button type="submit">Confirm</button>
+        </form>
 
     <!--Scripts-->
     <script src="input-clear.js"></script>
