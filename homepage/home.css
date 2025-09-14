@@ -16,6 +16,24 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
 
+/*Root variables for theme colour*/
+:root {
+    --Colour1: ;
+    --Colour2: ;
+    --Colour3: ;
+    --Colour4: ;
+
+    --PinnedSiteDividerColour: ;
+
+    --ButtonColour: ;
+    --ButtonColour2: ;
+    --Button2HoverColour: ;
+
+    --TextColour: ;
+    --PlaceholderTextColour: ;
+}
+
+/*Body*/
 body{
 
     user-select: none;
@@ -28,6 +46,8 @@ body{
     align-items: center;
     overflow: hidden;
 }
+
+/*Clock module*/
 .clock{
     text-align: center;
     display: flex;
@@ -42,6 +62,8 @@ body{
     font-style: bold;
     animation: fadeIn 1s ease-in-out;
 }
+
+/*Main page wrapper*/
 .main-content{
     margin: 0;
     flex-direction: column;
@@ -52,6 +74,8 @@ body{
     width: 100vw;
     align-items: center;
 }
+
+/*Search bar*/
 .searchbar{
     height: 55px;
     min-width: 400px;
@@ -87,6 +111,11 @@ body{
     outline: none;
     padding-right: 30px;
 }
+#clearSearch {
+    opacity: 0;
+}
+
+/*Top icons bar*/
 .top-bar{
     position: fixed;
     height: 30px;
@@ -112,9 +141,8 @@ body{
     animation-duration: 3s;
     overflow: hidden;
 }
-#clearSearch{
-    opacity: 0;
-}
+
+/*Pinned sites dropdown*/
 .dropdownContent{
     display: none;
     position: absolute;
@@ -182,6 +210,7 @@ body{
     font-size: 2rem;
     margin-bottom: 15px;
 }
+/*Site favicons*/
 .favicon-settings {
     width: 50px;
     height: 50px;
@@ -203,7 +232,7 @@ body{
     }
 }
 
-/* Settings */
+/* Settings page */
 .settings {
     position: absolute;
     z-index: 2; 

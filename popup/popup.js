@@ -1,4 +1,19 @@
 /*    
+
+       ░░▓▓▓▓▓▓        
+         ░░░░▒▒▓▓▓     
+            ░░░▒▒▓▓▓   
+              ░░░▒▒▒▓  
+                ░░▒▒▓▓ 
+                ░░░▒▒▓▓
+                 ░░▒▒▓▓            Luma. - A simple, clean, and functional chrome homepage extension
+                ░░░▒▒▓▓            Made by - Ikachenko
+░░             ░░░▒▒▓▓             https://github.com/Ikachenko
+░░░░         ░░░░▒▓▓▓              https://instagram.com/ika.chenko/
+ ▓▒▒░░░░░░░░░░░▒▒▓▓▓   
+  ▓▓▒▒░▒░▒▒░▒░▒▓▓▓     
+     ▓▓▓▓▓▓▓▓▓▓        
+
 Luma. - A Simple, clean and functional chrome homepage extension
 Copyright (C) 2025 Ikachenko
 
@@ -16,4 +31,4 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
 
-console.log("homepage loaded successfully, hi user!")
+console.log("Luma. loaded successfully, hi user!")
