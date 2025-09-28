@@ -18,19 +18,20 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 /*Root variables for theme colour*/
 :root {
-    --Colour1: ;
-    --Colour2: ;
-    --Colour3: ;
-    --Colour4: ;
+    --Colour1: #000000;
+    --Colour2: #1b1b1d;
+    --Colour3: #0b0b0b;
+    
+    --SearchbarColour: #1f1f1f;
+    --PinnedSiteDividerColour: #181819;
+    --ScrollBarColour: #3e3e43;
 
-    --PinnedSiteDividerColour: ;
+    --ButtonColour: #444141;
+    --ButtonColour2: transparent;
+    --Button2HoverColour: #3e3e43;
 
-    --ButtonColour: ;
-    --ButtonColour2: ;
-    --Button2HoverColour: ;
-
-    --TextColour: ;
-    --PlaceholderTextColour: ;
+    --TextColour: #ffffff;
+    --PlaceholderTextColour: #757575;
 }
 
 /*Body*/
@@ -38,7 +39,7 @@ body{
 
     user-select: none;
     overflow: hidden;
-    background-color: black;
+    background-color: var(--Colour1);
     display: flex;
     flex-direction: column;
     height: 100vh;
@@ -56,7 +57,7 @@ body{
 #time{
     display: block;
     font-size: 17vw;
-    color: white;
+    color:var(--TextColour);
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     font-style: bold;
@@ -80,7 +81,7 @@ body{
     height: 55px;
     min-width: 400px;
     width: 50vw;
-    background-color: #1f1f1f;
+    background-color: var(--SearchbarColour);
     border-radius: 25px;
     display: flex;
     justify-content: left;
@@ -89,9 +90,9 @@ body{
 .searchbar input[type="text"]{
     height: 50px;
     width: 90%;
-    background-color: #1f1f1f;
+    background-color: var(--SearchbarColour);
     border: none;
-    color: white;
+    color: var(--TextColour);
     font-size: 20px;
     padding-left: 30px;
     border-top-left-radius: 25px;
@@ -102,9 +103,9 @@ body{
     height: 50px;
     min-width: 50px;
     width: 5%;
-    background-color: #1f1f1f;
+    background-color: var(--SearchbarColour);
     border: none;
-    color: white;
+    color: var(--TextColour);
     font-size: 20px;
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
@@ -126,7 +127,7 @@ body{
 .top-bar button{
     height: 50px;
     width: 50px;
-    background-color: transparent;
+    background-color: var(--ButtonColour2);
     border: none;
     color: white;
     font-size: 20px;
@@ -146,7 +147,7 @@ body{
 .dropdownContent{
     display: none;
     position: absolute;
-    background-color: #1b1b1d;
+    background-color: var(--Colour2);
     width: 400px;
     border-radius: 25px;
     margin-right: 20px;
@@ -162,7 +163,7 @@ body{
     width: 50px;
     background-color: transparent;
     border: none;
-    color: white;
+    color: var(--TextColour);
     font-size: 20px;
     outline: none;
 }
@@ -173,7 +174,7 @@ body{
     padding: 15px;
 }
 .dropdownContentContainer a{
-    color: white;
+    color: var(--TextColour);
     text-align: center;
     text-decoration: none;
     border-radius: 25px;
@@ -185,14 +186,14 @@ body{
     height: 110px;
 }
 .dropdownContentContainer button {
-    color: white;
+    color: var(--TextColour);
     text-align: center;
     text-decoration: none;
     border-radius: 25px;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    background-color: transparent;
+    background-color: var(--ButtonColour2);
     width: 110px;
     height: 110px;
     outline: none;
@@ -218,10 +219,10 @@ body{
     align-self: center;
 }
 .dropdownContentContainer a:hover{
-    background-color: #3e3e43;
+    background-color: var(--Button2HoverColour);
 }
 .dropdownContentContainer button:hover{
-    background-color: #3e3e43;
+    background-color: var(--Button2HoverColour);
 }
 @keyframes fadeIn {
     from {
@@ -236,7 +237,7 @@ body{
 .settings {
     position: absolute;
     z-index: 2; 
-    background-color: #1b1b1d;
+    background-color: var(--Colour2);
     border-radius: 25px;
     width: 1000px;
     height: 900px;
@@ -271,7 +272,7 @@ body{
     width: 20%;
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
-    background-color: #0b0b0b;
+    background-color: var(--Colour3);
     display: flex;
     flex-direction: column;
     padding-top: 5px;
@@ -279,7 +280,7 @@ body{
 }
 .settingsSidePanel button {
     background-color: transparent;
-    color: white;
+    color: var(--TextColour);
     font-size: 20px;
     border: none;
     outline: none;
@@ -291,10 +292,10 @@ body{
     width: 100%;
 }
 .settingsSidePanel button:hover {
-    background-color: #3e3e43;
+    background-color: var(--Button2HoverColour);
 }
 .settingsLogoContainer {
-    color: white;
+    color: var(--TextColour);
     padding-left: 30px;
     padding-right: 30px;
     font-size: 20px;
@@ -303,7 +304,7 @@ body{
     padding-bottom: 100px;
 }
 .versionNumber {
-    color: white;
+    color: var(--TextColour);
     padding-bottom: 5px;
     text-align: left;
     font-size: 20px;
@@ -323,7 +324,7 @@ body{
     width: 80%;
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
-    background-color: #1b1b1d;
+    background-color: var(--Colour2);
     height: 100%;
     overflow: hidden;
 }
@@ -335,7 +336,7 @@ body{
     padding-bottom: 25px;
     padding-left: 10%;
     padding-right: 10%;
-    color: white;
+    color: var(--TextColour);
     height: 100%;
     overflow-y: scroll;
 }
@@ -362,10 +363,10 @@ body{
     padding-left: 0;
 }
 .settingsCommandButton {
-    background-color: #444141;
+    background-color: var(--ButtonColour);
     width: 240px;
     border-radius: 4px;
-    color: #fff;
+    color: var(--TextColour);
     cursor: pointer;
     padding: 15px 30px;
     font-size: 18px;
@@ -376,11 +377,11 @@ body{
 }
 .deleteDataButton {
     background-color: red !important;
-    color: white !important;
+    color: var(--TextColour) !important;
 }
 .pinned-site-list {
     width: 100%;
-    background-color: #0b0b0b;
+    background-color: var(--Colour3);
     height: 70vh;
     border-radius: 25px;
     overflow-y: scroll;
@@ -392,7 +393,7 @@ body{
     background: transparent !important;
 }
 ::-webkit-scrollbar-thumb {
-    background: #3e3e43 !important;
+    background: var(--ScrollBarColour) !important;
     border-radius: 5px;
 }
 ::-webkit-scrollbar-track {
@@ -402,7 +403,7 @@ body{
 .endBreak {
     height: 100px;
     width: 100%;
-    background-color: #1b1b1d;
+    background-color: var(--Colour2);
 }
 
 /* Pinned Sites*/
@@ -410,13 +411,13 @@ body{
     width: 90%;
     height: 10px;
     border-radius: 25px;
-    background-color: #181819;
+    background-color: var(--PinnedSiteDividerColour);
     margin: 5%;
 }
 .pin-site-dialog {
     position: absolute;
     z-index: 2; 
-    background-color: #1b1b1d;
+    background-color: var(--Colour2);
     border-radius: 25px;
     border: none;
     width: 800px;
@@ -436,7 +437,7 @@ dialog::backdrop {
     gap: 30px !important;
 
     /*text settings*/
-    color: white;
+    color: var(--TextColour);
     font-size: 20px;
     text-align: center;
     align-content: center;
@@ -445,19 +446,19 @@ dialog::backdrop {
 .pin-site-input{
     height: 35px;
     width: 80%;
-    background-color: #1f1f1f;
+    background-color: var(--SearchbarColour);
     border: none;
-    color: white;
+    color: var(--TextColour);
     font-size: 20px;
     border-radius: 25px;
     outline: none;
     padding-left: 20px;
 }
 .submit-pin-site {
-    background-color: #444141;
+    background-color: var(--ButtonColour);
     width: 120px;
     border-radius: 4px;
-    color: #fff;
+    color: var(--TextColour);
     cursor: pointer;
     font-size: 18px;
     font-weight: bold;
@@ -476,19 +477,19 @@ dialog::backdrop {
     display: grid;
     grid-template-columns: 10% 30% 30% 30%;
     align-items: center;
-    color: white;
+    color: var(--TextColour);
     padding-left: 30px;
     padding-right: 30px;
-    background-color: #3e3e43;
+    background-color: var(--Button2HoverColour);
 }
 .pinned-site-list-item-content {
-    color: white;
+    color: var(--TextColour);
     justify-content: center;
     align-self: center;
     word-break: break-all !important;
 }
 .pinned-site-trash-button {
-    color: white;
+    color: var(--TextColour);
     text-align: center;
     text-decoration: none;
     border-radius: 10px;
@@ -504,7 +505,7 @@ dialog::backdrop {
     justify-self: center;
 }
 .pinned-site-trash-button:hover {
-    background-color: #444141;
+    background-color: var(--ButtonColour);
 }
 /* From Uiverse.io by arghyaBiswasDev */ 
 /* The switch - the box around the slider */
@@ -572,7 +573,7 @@ input:checked + .slider:before {
 .delete-site-dialog {
     position: absolute;
     z-index: 2; 
-    background-color: #1b1b1d;
+    background-color: var(--Colour2);
     border-radius: 25px;
     border: none;
     width: 800px;
@@ -580,17 +581,17 @@ input:checked + .slider:before {
     overflow: hidden;
     
     /*text settings*/
-    color: white;
+    color: var(--TextColour);
     font-size: 20px;
     text-align: center;
     align-content: center;
     font-style: bold;
 }
 .delete-site-dialog button {
-    background-color: #444141;
+    background-color: var(--ButtonColour);
     width: 120px;
     border-radius: 4px;
-    color: #fff;
+    color: var(--TextColour);
     cursor: pointer;
     font-size: 18px;
     font-weight: bold;
@@ -599,4 +600,16 @@ input:checked + .slider:before {
     margin-bottom: 10px;
     text-align: center;
     padding: 10px 20px;
+}
+.theme-display {
+    width: 100%;
+    background-color: var(--Colour3);
+    aspect-ratio: 1920 / 991;
+    border-radius: 25px;
+    overflow: hidden;
+}
+.theme-display img {
+    width: 100%;
+    height: auto;
+    border-radius: 25px;
 }
